@@ -356,7 +356,7 @@
         "kind": 6,
         "importPath": "users.models",
         "description": "users.models",
-        "peekOfCode": "class User(models.Model):\n    username = models.CharField(max_length=12, null=False, blank=False)\n    email = models.EmailField(max_length=150, null=False, blank=False, unique=True)\n    password = models.CharField(max_length=32, null=False, blank=False)\n    created_at = models.DateTimeField(null=False, blank=False)",
+        "peekOfCode": "class User(models.Model):\n    username = models.CharField(max_length=12, null=False, blank=False, unique=True)\n    email = models.EmailField(max_length=150, null=False, blank=False, unique=True)\n    password = models.CharField(max_length=32, null=False, blank=False, unique=True)\n    created_at = models.DateTimeField(null=False, blank=False)",
         "detail": "users.models",
         "documentation": {}
     },
