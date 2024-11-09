@@ -1,8 +1,10 @@
 from users.models import User
 from users.serializers import CreateUserSerializer, ListUserSerializer, UpdateUserSerializer
 
+
 from rest_framework import viewsets, status
 from rest_framework.response import Response
+from rest_framework.permissions import  IsAuthenticated, AllowAny
 
 class UserViewSet(viewsets.GenericViewSet):
     queryset = User.objects.all()
@@ -13,6 +15,11 @@ class UserViewSet(viewsets.GenericViewSet):
         elif self.action == 'partial_update':
             return UpdateUserSerializer
         return ListUserSerializer
+    
+    def get_permissions(self):
+        if self.action == 'create':
+            return [AllowAny()]
+        return [IsAuthenticated()]
 
     def create(self, request):
         print("Dados recebidos no registro:", request.data)
