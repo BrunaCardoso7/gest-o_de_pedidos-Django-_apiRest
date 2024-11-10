@@ -38,6 +38,7 @@ ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=Csv())
 INSTALLED_APPS = [
     "authentication",
     "users",
+    "rest_framework_swagger",
     "rest_framework_simplejwt",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -46,7 +47,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.auth.hashers",
-    "rest_framework"
+    "rest_framework",
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [

@@ -184,6 +184,14 @@
         "documentation": {}
     },
     {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -337,19 +345,35 @@
         "documentation": {}
     },
     {
-        "label": "TokenObtainPairView",
-        "importPath": "rest_framework_simplejwt.views",
-        "description": "rest_framework_simplejwt.views",
-        "isExtraImport": true,
-        "detail": "rest_framework_simplejwt.views",
-        "documentation": {}
-    },
-    {
         "label": "SigninTokenObtainPairView",
         "importPath": "authentication.views",
         "description": "authentication.views",
         "isExtraImport": true,
         "detail": "authentication.views",
+        "documentation": {}
+    },
+    {
+        "label": "openapi",
+        "importPath": "drf_yasg",
+        "description": "drf_yasg",
+        "isExtraImport": true,
+        "detail": "drf_yasg",
+        "documentation": {}
+    },
+    {
+        "label": "get_schema_view",
+        "importPath": "drf_yasg.views",
+        "description": "drf_yasg.views",
+        "isExtraImport": true,
+        "detail": "drf_yasg.views",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -430,6 +454,14 @@
         "description": "users.views",
         "isExtraImport": true,
         "detail": "users.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_swagger_view",
+        "importPath": "rest_framework_swagger.views",
+        "description": "rest_framework_swagger.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_swagger.views",
         "documentation": {}
     },
     {
@@ -524,7 +556,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "DEBUG = config(\"DEBUG\", cast=bool, default=False)\n# cast: transforma string de ambiente em Csv para permissão de multiplos hosts\nALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",",
+        "peekOfCode": "DEBUG = config(\"DEBUG\", cast=bool, default=False)\n# cast: transforma string de ambiente em Csv para permissão de multiplos hosts\nALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -533,7 +565,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "ALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "peekOfCode": "ALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -542,7 +574,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -682,11 +714,20 @@
         "documentation": {}
     },
     {
+        "label": "schema_view",
+        "kind": 5,
+        "importPath": "setup.urls",
+        "description": "setup.urls",
+        "peekOfCode": "schema_view = get_schema_view(\n   openapi.Info(\n      title=\"Gerenciamento de Pedidos API\",\n      default_version='v1',\n      description=\"Documentação completa de todas as APIs do projeto\",\n      terms_of_service=\"https://www.google.com/policies/terms/\",\n      contact=openapi.Contact(email=\"contato@dominio.com\"),\n      license=openapi.License(name=\"Licença MIT\"),\n   ),\n   public=True,",
+        "detail": "setup.urls",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "setup.urls",
         "description": "setup.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"signin/\", SigninTokenObtainPairView.as_view(), name='signin'),\n    path(\"api/v1/\", include('users.urls'))\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"signin/\", SigninTokenObtainPairView.as_view(), name='signin'),\n    path(\"api/v1/\", include('users.urls')),\n    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-docs'),\n]",
         "detail": "setup.urls",
         "documentation": {}
     },
@@ -787,6 +828,15 @@
         "description": "users.tests",
         "peekOfCode": "class UserMagnamentTest (TestCase):\n    def setUp(self):\n        self.client = APIClient()\n        self.user_data = {\n            \"username\": \"devtest\",\n            \"email\": \"devtest@gmail.com\",\n            \"password\": \"dev123\"\n        }\n    def test_create_user_username_email_unique(self):\n        \"\"\"\"",
         "detail": "users.tests",
+        "documentation": {}
+    },
+    {
+        "label": "schema_view",
+        "kind": 5,
+        "importPath": "users.urls",
+        "description": "users.urls",
+        "peekOfCode": "schema_view = get_swagger_view(title='Gerenciamento de pedidos API DJANGO')\nrouter = DefaultRouter()\nrouter.register(r'user', UserViewSet, basename='user')\nurlpatterns = router.urls",
+        "detail": "users.urls",
         "documentation": {}
     },
     {
