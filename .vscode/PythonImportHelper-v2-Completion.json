@@ -336,6 +336,14 @@
         "documentation": {}
     },
     {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
         "label": "AllowAny",
         "importPath": "rest_framework.permissions",
         "description": "rest_framework.permissions",
@@ -722,7 +730,7 @@
         "kind": 6,
         "importPath": "items.views",
         "description": "items.views",
-        "peekOfCode": "class ItemViewSet(viewsets.GenericViewSet):\n    queryset = Item.objects.all()\n    def get_serializer_class (self):\n        if self.action == 'create': \n            return CreateItemSerializer\n        elif self.action == 'partial_update':\n            return UpdateItemSerializer\n        return ListItemsSerializer\n    def create (self, request):\n        serializer = self.get_serializer(data=request.data)",
+        "peekOfCode": "class ItemViewSet(viewsets.GenericViewSet):\n    queryset = Item.objects.all()\n    def get_serializer_class (self):\n        if self.action == 'create': \n            return CreateItemSerializer\n        elif self.action == 'partial_update':\n            return UpdateItemSerializer\n        return ListItemsSerializer\n    permission_classes = [IsAuthenticated]\n    def create (self, request):",
         "detail": "items.views",
         "documentation": {}
     },

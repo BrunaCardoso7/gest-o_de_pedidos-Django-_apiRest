@@ -1,7 +1,9 @@
 from items.serializers import CreateItemSerializer, ListItemsSerializer, UpdateItemSerializer
 from rest_framework import viewsets, status
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from .models import Item
+
 # Create your views here.
 class ItemViewSet(viewsets.GenericViewSet):
     queryset = Item.objects.all()
@@ -12,6 +14,8 @@ class ItemViewSet(viewsets.GenericViewSet):
         elif self.action == 'partial_update':
             return UpdateItemSerializer
         return ListItemsSerializer
+    
+    permission_classes = [IsAuthenticated]
     
     def create (self, request):
         serializer = self.get_serializer(data=request.data)
@@ -35,7 +39,7 @@ class ItemViewSet(viewsets.GenericViewSet):
         
         item.delete()
         
-        return Response("Item removido!",status=status.HTTP_204_NO_CONTENT)
+        return Response("Item removido!",status=status.HTTP_204_NO_CONTENT) 
     
     def list (self, request):
         items = self.get_queryset()
