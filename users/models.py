@@ -17,8 +17,19 @@ class UserManager(BaseUserManager):
         return self.create_user(username, email, password, **extra_fields)
 
 class User(AbstractBaseUser, PermissionsMixin):
-    username = models.CharField(max_length=255, unique=True)
-    email = models.EmailField(unique=True)
+    username = models.CharField(
+        max_length=255, 
+        unique=True,
+    )
+    email = models.EmailField(
+        unique=True,
+    )
+    # unicidade do campo password pode ser prejudicial à saúde da api
+    # password = models.CharField(
+    #     max_length=255, 
+    #     unique=True
+    # )
+
     created_at = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)

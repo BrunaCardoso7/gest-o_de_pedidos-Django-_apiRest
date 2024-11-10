@@ -22,6 +22,6 @@ from authentication.views import SigninTokenObtainPairView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("signin/", SigninTokenObtainPairView.as_view(), name='login'),
+    path("signin/", SigninTokenObtainPairView.as_view(), name='signin'),
     path("api/v1/", include('users.urls'))
 ]

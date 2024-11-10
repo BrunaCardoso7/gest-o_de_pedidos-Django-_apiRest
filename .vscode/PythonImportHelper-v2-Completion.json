@@ -120,6 +120,62 @@
         "documentation": {}
     },
     {
+        "label": "APIClient",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APIClient",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -129,6 +185,14 @@
     },
     {
         "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -273,22 +337,6 @@
         "documentation": {}
     },
     {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "include",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
         "label": "TokenObtainPairView",
         "importPath": "rest_framework_simplejwt.views",
         "description": "rest_framework_simplejwt.views",
@@ -427,11 +475,20 @@
         "documentation": {}
     },
     {
+        "label": "AuthenticateUserManagementTest",
+        "kind": 6,
+        "importPath": "authentication.tests",
+        "description": "authentication.tests",
+        "peekOfCode": "class AuthenticateUserManagementTest(TestCase):\n    def setUp(self):\n        self.client = APIClient()\n        self.user_data = {\n            \"username\": \"devtest\",\n            \"password\": \"dev123\"\n        }\n        self.user_create = {\n            \"username\": \"devtest\",\n            \"email\": \"devtest@gmail.com\",",
+        "detail": "authentication.tests",
+        "documentation": {}
+    },
+    {
         "label": "SigninTokenObtainPairView",
         "kind": 6,
         "importPath": "authentication.views",
         "description": "authentication.views",
-        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    def post(self, request):\n        username = request.data.get(\"username\")\n        password = request.data.get(\"password\")\n        # Adicionando prints para depuração\n        print(\"Dados recebidos da requisição:\")\n        print(\"Username:\", username)\n        print(\"Password:\", password)\n        # Chama o authenticate e verifica a resposta",
+        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    def post(self, request):\n        username = request.data.get(\"username\")\n        password = request.data.get(\"password\")\n        print(\"Dados recebidos da requisição:\")\n        print(\"Username:\", username)\n        print(\"Password:\", password)\n        user = authenticate(username=username, password=password)\n        print(\"Resultado de authenticate:\", user)  ",
         "detail": "authentication.views",
         "documentation": {}
     },
@@ -629,7 +686,7 @@
         "kind": 5,
         "importPath": "setup.urls",
         "description": "setup.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"signin/\", SigninTokenObtainPairView.as_view(), name='login'),\n    path(\"api/v1/\", include('users.urls'))\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"signin/\", SigninTokenObtainPairView.as_view(), name='signin'),\n    path(\"api/v1/\", include('users.urls'))\n]",
         "detail": "setup.urls",
         "documentation": {}
     },
@@ -692,7 +749,7 @@
         "kind": 6,
         "importPath": "users.models",
         "description": "users.models",
-        "peekOfCode": "class User(AbstractBaseUser, PermissionsMixin):\n    username = models.CharField(max_length=255, unique=True)\n    email = models.EmailField(unique=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    is_active = models.BooleanField(default=True)\n    is_staff = models.BooleanField(default=False)\n    objects = UserManager()\n    USERNAME_FIELD = 'username'\n    REQUIRED_FIELDS = ['email']\n    def __str__(self):",
+        "peekOfCode": "class User(AbstractBaseUser, PermissionsMixin):\n    username = models.CharField(\n        max_length=255, \n        unique=True,\n    )\n    email = models.EmailField(\n        unique=True,\n    )\n    # unicidade do campo password pode ser prejudicial à saúde da api\n    # password = models.CharField(",
         "detail": "users.models",
         "documentation": {}
     },
@@ -721,6 +778,15 @@
         "description": "users.serializers",
         "peekOfCode": "class ListUserSerializer (serializers.ModelSerializer):\n    class Meta :\n        model = User\n        fields = [\n            \"id\",\n            \"username\",\n            \"email\",\n            \"created_at\"\n        ]",
         "detail": "users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserMagnamentTes",
+        "kind": 6,
+        "importPath": "users.tests",
+        "description": "users.tests",
+        "peekOfCode": "class UserMagnamentTest (TestCase):\n    def setUp(self):\n        self.client = APIClient()\n        self.user_data = {\n            \"username\": \"devtest\",\n            \"email\": \"devtest@gmail.com\",\n            \"password\": \"dev123\"\n        }\n    def test_create_user_username_email_unique(self):\n        \"\"\"\"",
+        "detail": "users.tests",
         "documentation": {}
     },
     {
