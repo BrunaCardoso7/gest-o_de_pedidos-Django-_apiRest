@@ -20,9 +20,10 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("signin/", SigninTokenObtainPairView.as_view(), name='signin'),
-    path("api/v1/", include('users.urls')), 
-    path("api/v1/", include('items.urls')), 
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-docs'),
+   path("admin/", admin.site.urls),
+   path("signin/", SigninTokenObtainPairView.as_view(), name='signin'),
+   path("api/v1/", include('users.urls')), 
+   path("api/v1/", include('items.urls')), 
+   path("api/v1/", include('orders.urls')), 
+   path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-docs'),
 ]
