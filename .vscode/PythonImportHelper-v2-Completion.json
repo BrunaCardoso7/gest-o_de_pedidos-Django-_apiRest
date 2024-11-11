@@ -416,6 +416,14 @@
         "documentation": {}
     },
     {
+        "label": "Item",
+        "importPath": "items.models",
+        "description": "items.models",
+        "isExtraImport": true,
+        "detail": "items.models",
+        "documentation": {}
+    },
+    {
         "label": "DefaultRouter",
         "importPath": "rest_framework.routers",
         "description": "rest_framework.routers",
@@ -736,7 +744,7 @@
         "kind": 6,
         "importPath": "items.tests",
         "description": "items.tests",
-        "peekOfCode": "class ItemsTest(TestCase):\n    def setUp(self):\n        self.client = APIClient()\n        self.create_item = {\n            \"name\": \"caneta\",\n            \"price\": 10.0,\n        }\n        self.update_item= {\n            \"name\": \"caneta bic - azul\",\n            \"price\": 10.0,",
+        "peekOfCode": "class ItemsTest(TestCase):\n    def setUp(self):\n        self.client = APIClient()\n        self.create_item = {\n            \"name\": \"caneta\",\n            \"price\": 10.0,\n        }\n        self.update_item = {\n            \"name\": \"caneta bic - azul\",\n            \"price\": 10.0,",
         "detail": "items.tests",
         "documentation": {}
     },
