@@ -585,6 +585,14 @@
         "documentation": {}
     },
     {
+        "label": "Item",
+        "importPath": "items.models",
+        "description": "items.models",
+        "isExtraImport": true,
+        "detail": "items.models",
+        "documentation": {}
+    },
+    {
         "label": "Order",
         "importPath": "orders.models",
         "description": "orders.models",

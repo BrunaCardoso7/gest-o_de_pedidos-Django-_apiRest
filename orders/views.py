@@ -4,7 +4,7 @@ from rest_framework.permissions import IsAuthenticated
 from orders.models import Order
 from rest_framework import viewsets, status
 from rest_framework.response import Response
-
+from items.models import Item
 class OrderViewSet(viewsets.GenericViewSet):
     permission_classes = [IsAuthenticated]
 
@@ -21,9 +21,19 @@ class OrderViewSet(viewsets.GenericViewSet):
     def create(self, request):
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
-            serializer.save(user=request.user) 
+            items_ids = request.data.get('items', [])
+            
+            items = Item.objects.filter(id__in=items_ids)
+            total = sum(item.price for item in items)
+            
+            order = serializer.save(user=request.user)
+            order.total = total
+            order.save() 
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    
+
 
     def list(self, request):
         queryset = self.get_queryset()
