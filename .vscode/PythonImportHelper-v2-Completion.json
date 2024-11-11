@@ -256,6 +256,22 @@
         "documentation": {}
     },
     {
+        "label": "APIClient",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "reverse",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -313,6 +329,14 @@
     },
     {
         "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -504,6 +528,30 @@
         "documentation": {}
     },
     {
+        "label": "Item",
+        "importPath": "items.models",
+        "description": "items.models",
+        "isExtraImport": true,
+        "detail": "items.models",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "importPath": "items.models",
+        "description": "items.models",
+        "isExtraImport": true,
+        "detail": "items.models",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "importPath": "items.models",
+        "description": "items.models",
+        "isExtraImport": true,
+        "detail": "items.models",
+        "documentation": {}
+    },
+    {
         "label": "DefaultRouter",
         "importPath": "rest_framework.routers",
         "description": "rest_framework.routers",
@@ -598,22 +646,6 @@
         "description": "users.models",
         "isExtraImport": true,
         "detail": "users.models",
-        "documentation": {}
-    },
-    {
-        "label": "Item",
-        "importPath": "items.models",
-        "description": "items.models",
-        "isExtraImport": true,
-        "detail": "items.models",
-        "documentation": {}
-    },
-    {
-        "label": "Item",
-        "importPath": "items.models",
-        "description": "items.models",
-        "isExtraImport": true,
-        "detail": "items.models",
         "documentation": {}
     },
     {
@@ -946,6 +978,15 @@
         "description": "items.serializers",
         "peekOfCode": "class UpdateItemSerializer (serializers.ModelSerializer):\n    class Meta :\n        model = Item\n        fields = [\n            \"id\",\n            \"name\",\n            \"price\",\n            \"created_at\"\n        ]",
         "detail": "items.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ItemsTest",
+        "kind": 6,
+        "importPath": "items.tests",
+        "description": "items.tests",
+        "peekOfCode": "class ItemsTest(TestCase):\n    def setUp(self):\n        self.client = APIClient()\n        self.create_item = {\n            \"name\": \"caneta\",\n            \"price\": 10.0,\n        }\n        self.update_item = {\n            \"name\": \"caneta bic - azul\",\n            \"price\": 10.0,",
+        "detail": "items.tests",
         "documentation": {}
     },
     {
