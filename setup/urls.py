@@ -10,9 +10,9 @@ schema_view = get_schema_view(
    openapi.Info(
       title="Gerenciamento de Pedidos API",
       default_version='v1',
-      description="Documentação completa de todas as APIs do projeto",
+      description="Documentação completa de todas as rotas da api de gerenciamento de pedidos",
       terms_of_service="https://www.google.com/policies/terms/",
-      contact=openapi.Contact(email="contato@dominio.com"),
+      contact=openapi.Contact(email="brunafernandes@gmail.com"),
       license=openapi.License(name="Licença MIT"),
    ),
    public=True,
@@ -20,9 +20,10 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("signin/", SigninTokenObtainPairView.as_view(), name='signin'),
-    path("api/v1/", include('users.urls')), 
-    path("api/v1/", include('items.urls')), 
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-docs'),
+   path("admin/", admin.site.urls),
+   path("signin/", SigninTokenObtainPairView.as_view(), name='signin'),
+   path("api/v1/", include('users.urls')), 
+   path("api/v1/", include('items.urls')), 
+   path("api/v1/", include('orders.urls')), 
+   path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-docs'),
 ]
