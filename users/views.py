@@ -22,7 +22,7 @@ class UserViewSet(viewsets.GenericViewSet):
         return [IsAuthenticated()]
 
     def create(self, request):
-        print("Dados recebidos no registro:", request.data)
+        # print("Dados recebidos no registro:", request.data)
 
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)

@@ -673,6 +673,22 @@
         "documentation": {}
     },
     {
+        "label": "Paginator",
+        "importPath": "django.core.paginator",
+        "description": "django.core.paginator",
+        "isExtraImport": true,
+        "detail": "django.core.paginator",
+        "documentation": {}
+    },
+    {
+        "label": "PageNumberPagination",
+        "importPath": "rest_framework.pagination",
+        "description": "rest_framework.pagination",
+        "isExtraImport": true,
+        "detail": "rest_framework.pagination",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -865,7 +881,7 @@
         "kind": 6,
         "importPath": "authentication.views",
         "description": "authentication.views",
-        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    def post(self, request):\n        username = request.data.get(\"username\")\n        password = request.data.get(\"password\")\n        print(\"Dados recebidos da requisição:\")\n        print(\"Username:\", username)\n        print(\"Password:\", password)\n        user = authenticate(username=username, password=password)\n        print(\"Resultado de authenticate:\", user)  ",
+        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    def post(self, request):\n        username = request.data.get(\"username\")\n        password = request.data.get(\"password\")\n        # print(\"Dados recebidos da requisição:\")\n        # print(\"Username:\", username)\n        # print(\"Password:\", password)\n        user = authenticate(username=username, password=password)\n        # print(\"Resultado de authenticate:\", user)  ",
         "detail": "authentication.views",
         "documentation": {}
     },

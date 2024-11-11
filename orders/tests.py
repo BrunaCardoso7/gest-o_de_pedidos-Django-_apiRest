@@ -60,11 +60,13 @@ class OrdersTest(TestCase):
         CENÁRIO DE TESTE:
             Dado a rota de listagem de pedido, 
             quando realizado requisição get na api
-            deve ser listado todos os pedidos vinculados ao usuário autenticado 
+            deve ser listado todos os pedidos paginados
+            com no máximo 10 pediodos vinculados ao usuário autenticado 
             voltando como resposta o código (200).
         """
-        response_list_order_user = self.client.get(reverse('order-list'), format='json')
-        self.assertEqual(response_list_order_user.status_code, status.HTTP_200_OK)
+        response_page_1 = self.client.get(reverse('order-list') + "?page=1", format='json')
+        self.assertEqual(response_page_1.status_code, status.HTTP_200_OK)
+        self.assertIn('next', response_page_1.data) 
         
     def test_list_details_order(self):
         """
