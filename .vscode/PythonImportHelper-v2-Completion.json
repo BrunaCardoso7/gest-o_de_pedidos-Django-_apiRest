@@ -248,6 +248,22 @@
         "documentation": {}
     },
     {
+        "label": "APIClient",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "reverse",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -321,6 +337,14 @@
     },
     {
         "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -590,6 +614,14 @@
         "description": "items.models",
         "isExtraImport": true,
         "detail": "items.models",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
         "documentation": {}
     },
     {
@@ -982,6 +1014,15 @@
         "documentation": {}
     },
     {
+        "label": "OrdersTest",
+        "kind": 6,
+        "importPath": "orders.tests",
+        "description": "orders.tests",
+        "peekOfCode": "class OrdersTest(TestCase):\n    def setUp(self):\n        self.client = APIClient()\n        #corpo da requisição de criação do pedido, encaminhando o id dos items registrados\n        self.create_order = {\n            \"items\": [1]\n        }\n        self.create_item = {\n            \"name\": \"caneta\",\n            \"price\": 10.0,",
+        "detail": "orders.tests",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "kind": 5,
         "importPath": "orders.urls",
@@ -1202,7 +1243,7 @@
         "kind": 5,
         "importPath": "setup.urls",
         "description": "setup.urls",
-        "peekOfCode": "schema_view = get_schema_view(\n   openapi.Info(\n      title=\"Gerenciamento de Pedidos API\",\n      default_version='v1',\n      description=\"Documentação completa de todas as APIs do projeto\",\n      terms_of_service=\"https://www.google.com/policies/terms/\",\n      contact=openapi.Contact(email=\"contato@dominio.com\"),\n      license=openapi.License(name=\"Licença MIT\"),\n   ),\n   public=True,",
+        "peekOfCode": "schema_view = get_schema_view(\n   openapi.Info(\n      title=\"Gerenciamento de Pedidos API\",\n      default_version='v1',\n      description=\"Documentação completa de todas as rotas da api de gerenciamento de pedidos\",\n      terms_of_service=\"https://www.google.com/policies/terms/\",\n      contact=openapi.Contact(email=\"brunafernandes@gmail.com\"),\n      license=openapi.License(name=\"Licença MIT\"),\n   ),\n   public=True,",
         "detail": "setup.urls",
         "documentation": {}
     },

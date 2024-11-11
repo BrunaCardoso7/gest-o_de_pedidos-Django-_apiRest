@@ -47,4 +47,4 @@ class OrderViewSet(viewsets.GenericViewSet):
             return Response("Pedido não entrado!", status=status.HTTP_404_NOT_FOUND)
 
         serializer = self.get_serializer(order)
-        return Response(serializer.data)
+        return Response(serializer.data, status=status.HTTP_200_OK)
