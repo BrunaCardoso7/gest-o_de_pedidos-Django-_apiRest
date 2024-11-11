@@ -59,6 +59,7 @@ class AuthenticateUserManagementTest(TestCase):
             "username": "dentest_atualizado",
             "email": "devtestupdate@gmail.com"
         }
+        
         response_update_profile_user = self.client.patch(reverse('user-detail', kwargs={'pk': 1}), data_updated, format='json')
         self.assertEqual(response_update_profile_user.status_code, status.HTTP_206_PARTIAL_CONTENT)
 

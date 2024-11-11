@@ -38,6 +38,8 @@ ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=Csv())
 INSTALLED_APPS = [
     "authentication",
     "users",
+    "items",
+    "orders",
     "rest_framework_swagger",
     "rest_framework_simplejwt",
     "django.contrib.admin",
