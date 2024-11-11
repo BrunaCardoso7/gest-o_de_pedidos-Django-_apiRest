@@ -256,6 +256,22 @@
         "documentation": {}
     },
     {
+        "label": "APIClient",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "reverse",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -520,6 +536,22 @@
         "documentation": {}
     },
     {
+        "label": "Item",
+        "importPath": "items.models",
+        "description": "items.models",
+        "isExtraImport": true,
+        "detail": "items.models",
+        "documentation": {}
+    },
+    {
+        "label": "Item",
+        "importPath": "items.models",
+        "description": "items.models",
+        "isExtraImport": true,
+        "detail": "items.models",
+        "documentation": {}
+    },
+    {
         "label": "DefaultRouter",
         "importPath": "rest_framework.routers",
         "description": "rest_framework.routers",
@@ -614,22 +646,6 @@
         "description": "users.models",
         "isExtraImport": true,
         "detail": "users.models",
-        "documentation": {}
-    },
-    {
-        "label": "Item",
-        "importPath": "items.models",
-        "description": "items.models",
-        "isExtraImport": true,
-        "detail": "items.models",
-        "documentation": {}
-    },
-    {
-        "label": "Item",
-        "importPath": "items.models",
-        "description": "items.models",
-        "isExtraImport": true,
-        "detail": "items.models",
         "documentation": {}
     },
     {
