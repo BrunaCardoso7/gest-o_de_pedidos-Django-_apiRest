@@ -12,13 +12,13 @@ class SigninTokenObtainPairView(APIView):
         username = request.data.get("username")
         password = request.data.get("password")
         
-        # print("Dados recebidos da requisição:")
-        # print("Username:", username)
-        # print("Password:", password)
+        print("Dados recebidos da requisição:")
+        print("Username:", username)
+        print("Password:", password)
         
         user = authenticate(username=username, password=password)
         
-        # print("Resultado de authenticate:", user)  
+        print("Resultado de authenticate:", user)  
         
         if user is not None:
             refresh = RefreshToken.for_user(user)
@@ -30,7 +30,7 @@ class SigninTokenObtainPairView(APIView):
                 }
             }, status=status.HTTP_200_OK)
         
-        # print("Autenticação falhou: credenciais incorretas") 
+        print("Autenticação falhou: credenciais incorretas") 
         return Response(
             {'message': "Usuário ou senha estão incorretos!"},
             status=status.HTTP_401_UNAUTHORIZED

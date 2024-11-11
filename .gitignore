@@ -1,3 +1,3 @@
 # Ambiente virtual Python
 .venv/
-.env*.pyc
+.env

@@ -24,38 +24,6 @@
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -112,14 +80,6 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -141,78 +101,6 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -245,22 +133,6 @@
         "description": "rest_framework.test",
         "isExtraImport": true,
         "detail": "rest_framework.test",
-        "documentation": {}
-    },
-    {
-        "label": "APIClient",
-        "importPath": "rest_framework.test",
-        "description": "rest_framework.test",
-        "isExtraImport": true,
-        "detail": "rest_framework.test",
-        "documentation": {}
-    },
-    {
-        "label": "reverse",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -297,62 +169,6 @@
     },
     {
         "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "serializers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "viewsets",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "serializers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "viewsets",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -432,22 +248,6 @@
         "documentation": {}
     },
     {
-        "label": "IsAuthenticated",
-        "importPath": "rest_framework.permissions",
-        "description": "rest_framework.permissions",
-        "isExtraImport": true,
-        "detail": "rest_framework.permissions",
-        "documentation": {}
-    },
-    {
-        "label": "IsAuthenticated",
-        "importPath": "rest_framework.permissions",
-        "description": "rest_framework.permissions",
-        "isExtraImport": true,
-        "detail": "rest_framework.permissions",
-        "documentation": {}
-    },
-    {
         "label": "AllowAny",
         "importPath": "rest_framework.permissions",
         "description": "rest_framework.permissions",
@@ -480,212 +280,11 @@
         "documentation": {}
     },
     {
-        "label": "Response",
-        "importPath": "rest_framework.response",
-        "description": "rest_framework.response",
-        "isExtraImport": true,
-        "detail": "rest_framework.response",
-        "documentation": {}
-    },
-    {
-        "label": "Response",
-        "importPath": "rest_framework.response",
-        "description": "rest_framework.response",
-        "isExtraImport": true,
-        "detail": "rest_framework.response",
-        "documentation": {}
-    },
-    {
         "label": "RefreshToken",
         "importPath": "rest_framework_simplejwt.tokens",
         "description": "rest_framework_simplejwt.tokens",
         "isExtraImport": true,
         "detail": "rest_framework_simplejwt.tokens",
-        "documentation": {}
-    },
-    {
-        "label": "DefaultRouter",
-        "importPath": "rest_framework.routers",
-        "description": "rest_framework.routers",
-        "isExtraImport": true,
-        "detail": "rest_framework.routers",
-        "documentation": {}
-    },
-    {
-        "label": "DefaultRouter",
-        "importPath": "rest_framework.routers",
-        "description": "rest_framework.routers",
-        "isExtraImport": true,
-        "detail": "rest_framework.routers",
-        "documentation": {}
-    },
-    {
-        "label": "DefaultRouter",
-        "importPath": "rest_framework.routers",
-        "description": "rest_framework.routers",
-        "isExtraImport": true,
-        "detail": "rest_framework.routers",
-        "documentation": {}
-    },
-    {
-        "label": "CreateItemSerializer",
-        "importPath": "items.serializers",
-        "description": "items.serializers",
-        "isExtraImport": true,
-        "detail": "items.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "ListItemsSerializer",
-        "importPath": "items.serializers",
-        "description": "items.serializers",
-        "isExtraImport": true,
-        "detail": "items.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "UpdateItemSerializer",
-        "importPath": "items.serializers",
-        "description": "items.serializers",
-        "isExtraImport": true,
-        "detail": "items.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "ListItemsSerializer",
-        "importPath": "items.serializers",
-        "description": "items.serializers",
-        "isExtraImport": true,
-        "detail": "items.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "django.db.models.deletion",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db.models.deletion",
-        "description": "django.db.models.deletion",
-        "detail": "django.db.models.deletion",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "users.models",
-        "description": "users.models",
-        "isExtraImport": true,
-        "detail": "users.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "users.models",
-        "description": "users.models",
-        "isExtraImport": true,
-        "detail": "users.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "users.models",
-        "description": "users.models",
-        "isExtraImport": true,
-        "detail": "users.models",
-        "documentation": {}
-    },
-    {
-        "label": "Item",
-        "importPath": "items.models",
-        "description": "items.models",
-        "isExtraImport": true,
-        "detail": "items.models",
-        "documentation": {}
-    },
-    {
-        "label": "Item",
-        "importPath": "items.models",
-        "description": "items.models",
-        "isExtraImport": true,
-        "detail": "items.models",
-        "documentation": {}
-    },
-    {
-        "label": "Order",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
-        "label": "Order",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
-        "label": "Order",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
-        "label": "OrderViewSet",
-        "importPath": "orders.views",
-        "description": "orders.views",
-        "isExtraImport": true,
-        "detail": "orders.views",
-        "documentation": {}
-    },
-    {
-        "label": "CreateOrderSerializer",
-        "importPath": "orders.serializers",
-        "description": "orders.serializers",
-        "isExtraImport": true,
-        "detail": "orders.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "ListItemsInOrderSerializer",
-        "importPath": "orders.serializers",
-        "description": "orders.serializers",
-        "isExtraImport": true,
-        "detail": "orders.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "ListOrderSerializer",
-        "importPath": "orders.serializers",
-        "description": "orders.serializers",
-        "isExtraImport": true,
-        "detail": "orders.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "Paginator",
-        "importPath": "django.core.paginator",
-        "description": "django.core.paginator",
-        "isExtraImport": true,
-        "detail": "django.core.paginator",
-        "documentation": {}
-    },
-    {
-        "label": "PageNumberPagination",
-        "importPath": "rest_framework.pagination",
-        "description": "rest_framework.pagination",
-        "isExtraImport": true,
-        "detail": "rest_framework.pagination",
         "documentation": {}
     },
     {
@@ -770,6 +369,14 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -802,6 +409,22 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "users.models",
+        "description": "users.models",
+        "isExtraImport": true,
+        "detail": "users.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "users.models",
+        "description": "users.models",
+        "isExtraImport": true,
+        "detail": "users.models",
+        "documentation": {}
+    },
+    {
         "label": "make_password",
         "importPath": "django.contrib.auth.hashers",
         "description": "django.contrib.auth.hashers",
@@ -818,11 +441,27 @@
         "documentation": {}
     },
     {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
         "label": "UserViewSet",
         "importPath": "users.views",
         "description": "users.views",
         "isExtraImport": true,
         "detail": "users.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_swagger_view",
+        "importPath": "rest_framework_swagger.views",
+        "description": "rest_framework_swagger.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_swagger.views",
         "documentation": {}
     },
     {
@@ -881,188 +520,8 @@
         "kind": 6,
         "importPath": "authentication.views",
         "description": "authentication.views",
-        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    def post(self, request):\n        username = request.data.get(\"username\")\n        password = request.data.get(\"password\")\n        # print(\"Dados recebidos da requisição:\")\n        # print(\"Username:\", username)\n        # print(\"Password:\", password)\n        user = authenticate(username=username, password=password)\n        # print(\"Resultado de authenticate:\", user)  ",
+        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    def post(self, request):\n        username = request.data.get(\"username\")\n        password = request.data.get(\"password\")\n        print(\"Dados recebidos da requisição:\")\n        print(\"Username:\", username)\n        print(\"Password:\", password)\n        user = authenticate(username=username, password=password)\n        print(\"Resultado de authenticate:\", user)  ",
         "detail": "authentication.views",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "items.migrations.0001_initial",
-        "description": "items.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = []\n    operations = [\n        migrations.CreateModel(\n            name=\"Item\",\n            fields=[\n                (\n                    \"id\",\n                    models.BigAutoField(",
-        "detail": "items.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "items.migrations.0002_item_name_item_price",
-        "description": "items.migrations.0002_item_name_item_price",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        (\"items\", \"0001_initial\"),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name=\"item\",\n            name=\"name\",\n            field=models.CharField(blank=True, max_length=100, null=True),\n        ),",
-        "detail": "items.migrations.0002_item_name_item_price",
-        "documentation": {}
-    },
-    {
-        "label": "ItemsConfig",
-        "kind": 6,
-        "importPath": "items.apps",
-        "description": "items.apps",
-        "peekOfCode": "class ItemsConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"items\"",
-        "detail": "items.apps",
-        "documentation": {}
-    },
-    {
-        "label": "Ite",
-        "kind": 6,
-        "importPath": "items.models",
-        "description": "items.models",
-        "peekOfCode": "class Item (models.Model):\n    name= models.CharField(max_length=100, null=True, blank=True) \n    price= models.FloatField(null=True, blank=True, default=0.0) \n    created_at = models.DateTimeField(auto_now_add=True)",
-        "detail": "items.models",
-        "documentation": {}
-    },
-    {
-        "label": "CreateItemSerialize",
-        "kind": 6,
-        "importPath": "items.serializers",
-        "description": "items.serializers",
-        "peekOfCode": "class CreateItemSerializer (serializers.ModelSerializer):\n    class Meta :\n        model = Item\n        fields = [\n            \"id\",\n            \"name\",\n            \"price\",\n            \"created_at\"\n        ]\nclass ListItemsSerializer (serializers.ModelSerializer):",
-        "detail": "items.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "ListItemsSerialize",
-        "kind": 6,
-        "importPath": "items.serializers",
-        "description": "items.serializers",
-        "peekOfCode": "class ListItemsSerializer (serializers.ModelSerializer):\n    class Meta :\n        model = Item\n        fields = [\n            \"id\",\n            \"name\",\n            \"price\",\n            \"created_at\"\n        ]\nclass UpdateItemSerializer (serializers.ModelSerializer):",
-        "detail": "items.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "UpdateItemSerialize",
-        "kind": 6,
-        "importPath": "items.serializers",
-        "description": "items.serializers",
-        "peekOfCode": "class UpdateItemSerializer (serializers.ModelSerializer):\n    class Meta :\n        model = Item\n        fields = [\n            \"id\",\n            \"name\",\n            \"price\",\n            \"created_at\"\n        ]",
-        "detail": "items.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "router",
-        "kind": 5,
-        "importPath": "items.urls",
-        "description": "items.urls",
-        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'item', ItemViewSet, basename='item')\nurlpatterns = router.urls",
-        "detail": "items.urls",
-        "documentation": {}
-    },
-    {
-        "label": "urlpatterns",
-        "kind": 5,
-        "importPath": "items.urls",
-        "description": "items.urls",
-        "peekOfCode": "urlpatterns = router.urls",
-        "detail": "items.urls",
-        "documentation": {}
-    },
-    {
-        "label": "ItemViewSet",
-        "kind": 6,
-        "importPath": "items.views",
-        "description": "items.views",
-        "peekOfCode": "class ItemViewSet(viewsets.GenericViewSet):\n    queryset = Item.objects.all()\n    def get_serializer_class (self):\n        if self.action == 'create': \n            return CreateItemSerializer\n        elif self.action == 'partial_update':\n            return UpdateItemSerializer\n        return ListItemsSerializer\n    permission_classes = [IsAuthenticated]\n    def create (self, request):",
-        "detail": "items.views",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "orders.migrations.0001_initial",
-        "description": "orders.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        (\"items\", \"0002_item_name_item_price\"),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name=\"Order\",\n            fields=[",
-        "detail": "orders.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "OrdersConfig",
-        "kind": 6,
-        "importPath": "orders.apps",
-        "description": "orders.apps",
-        "peekOfCode": "class OrdersConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"orders\"",
-        "detail": "orders.apps",
-        "documentation": {}
-    },
-    {
-        "label": "Order",
-        "kind": 6,
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "peekOfCode": "class Order(models.Model):\n    user= models.ForeignKey(User, related_name='orders',on_delete=models.CASCADE)\n    items = models.ManyToManyField(Item, related_name='orders')\n    total = models.FloatField(default=0.0)\n    create_at = models.DateTimeField(auto_now_add=True)",
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
-        "label": "CreateOrderSerializer",
-        "kind": 6,
-        "importPath": "orders.serializers",
-        "description": "orders.serializers",
-        "peekOfCode": "class CreateOrderSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Order\n        fields = [\n            \"id\",\n            \"user\",\n            \"items\",\n            \"total\",\n            \"create_at\"\n        ]",
-        "detail": "orders.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "ListOrderSerializer",
-        "kind": 6,
-        "importPath": "orders.serializers",
-        "description": "orders.serializers",
-        "peekOfCode": "class ListOrderSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Order\n        fields = [\n            \"id\",\n            \"items\",\n            \"total\",\n            \"create_at\"\n        ]\n        read_only_fields = ['user']  ",
-        "detail": "orders.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "ListItemsInOrderSerializer",
-        "kind": 6,
-        "importPath": "orders.serializers",
-        "description": "orders.serializers",
-        "peekOfCode": "class ListItemsInOrderSerializer(serializers.ModelSerializer):\n    items = ListItemsSerializer(many=True)\n    class Meta:\n        model = Order\n        fields = [\n            \"id\",\n            \"items\",\n            \"total\",    \n            \"create_at\"\n        ]",
-        "detail": "orders.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "OrdersTest",
-        "kind": 6,
-        "importPath": "orders.tests",
-        "description": "orders.tests",
-        "peekOfCode": "class OrdersTest(TestCase):\n    def setUp(self):\n        self.client = APIClient()\n        #corpo da requisição de criação do pedido, encaminhando o id dos items registrados\n        self.create_order = {\n            \"items\": [1]\n        }\n        self.create_item = {\n            \"name\": \"caneta\",\n            \"price\": 10.0,",
-        "detail": "orders.tests",
-        "documentation": {}
-    },
-    {
-        "label": "router",
-        "kind": 5,
-        "importPath": "orders.urls",
-        "description": "orders.urls",
-        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'order', OrderViewSet, basename='order')\nurlpatterns = router.urls",
-        "detail": "orders.urls",
-        "documentation": {}
-    },
-    {
-        "label": "urlpatterns",
-        "kind": 5,
-        "importPath": "orders.urls",
-        "description": "orders.urls",
-        "peekOfCode": "urlpatterns = router.urls",
-        "detail": "orders.urls",
-        "documentation": {}
-    },
-    {
-        "label": "OrderViewSet",
-        "kind": 6,
-        "importPath": "orders.views",
-        "description": "orders.views",
-        "peekOfCode": "class OrderViewSet(viewsets.GenericViewSet):\n    permission_classes = [IsAuthenticated]\n    def get_serializer_class(self):\n        if self.action =='create':\n            return CreateOrderSerializer\n        elif self.action == 'retrieve':\n            return ListItemsInOrderSerializer\n        return ListOrderSerializer\n    def get_queryset(self):\n        return Order.objects.filter(user=self.request.user)",
-        "detail": "orders.views",
         "documentation": {}
     },
     {
@@ -1097,7 +556,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "DEBUG = config(\"DEBUG\", cast=bool, default=False)\n# cast: transforma string de ambiente em Csv para permissão de multiplos hosts\nALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"items\",\n    \"orders\",\n    \"rest_framework_swagger\",",
+        "peekOfCode": "DEBUG = config(\"DEBUG\", cast=bool, default=False)\n# cast: transforma string de ambiente em Csv para permissão de multiplos hosts\nALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1106,7 +565,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "ALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"items\",\n    \"orders\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",",
+        "peekOfCode": "ALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1115,7 +574,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"items\",\n    \"orders\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1259,7 +718,7 @@
         "kind": 5,
         "importPath": "setup.urls",
         "description": "setup.urls",
-        "peekOfCode": "schema_view = get_schema_view(\n   openapi.Info(\n      title=\"Gerenciamento de Pedidos API\",\n      default_version='v1',\n      description=\"Documentação completa de todas as rotas da api de gerenciamento de pedidos\",\n      terms_of_service=\"https://www.google.com/policies/terms/\",\n      contact=openapi.Contact(email=\"brunafernandes@gmail.com\"),\n      license=openapi.License(name=\"Licença MIT\"),\n   ),\n   public=True,",
+        "peekOfCode": "schema_view = get_schema_view(\n   openapi.Info(\n      title=\"Gerenciamento de Pedidos API\",\n      default_version='v1',\n      description=\"Documentação completa de todas as APIs do projeto\",\n      terms_of_service=\"https://www.google.com/policies/terms/\",\n      contact=openapi.Contact(email=\"contato@dominio.com\"),\n      license=openapi.License(name=\"Licença MIT\"),\n   ),\n   public=True,",
         "detail": "setup.urls",
         "documentation": {}
     },
@@ -1268,7 +727,7 @@
         "kind": 5,
         "importPath": "setup.urls",
         "description": "setup.urls",
-        "peekOfCode": "urlpatterns = [\n   path(\"admin/\", admin.site.urls),\n   path(\"signin/\", SigninTokenObtainPairView.as_view(), name='signin'),\n   path(\"api/v1/\", include('users.urls')), \n   path(\"api/v1/\", include('items.urls')), \n   path(\"api/v1/\", include('orders.urls')), \n   path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-docs'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"signin/\", SigninTokenObtainPairView.as_view(), name='signin'),\n    path(\"api/v1/\", include('users.urls')),\n    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-docs'),\n]",
         "detail": "setup.urls",
         "documentation": {}
     },
@@ -1369,6 +828,15 @@
         "description": "users.tests",
         "peekOfCode": "class UserMagnamentTest (TestCase):\n    def setUp(self):\n        self.client = APIClient()\n        self.user_data = {\n            \"username\": \"devtest\",\n            \"email\": \"devtest@gmail.com\",\n            \"password\": \"dev123\"\n        }\n    def test_create_user_username_email_unique(self):\n        \"\"\"\"",
         "detail": "users.tests",
+        "documentation": {}
+    },
+    {
+        "label": "schema_view",
+        "kind": 5,
+        "importPath": "users.urls",
+        "description": "users.urls",
+        "peekOfCode": "schema_view = get_swagger_view(title='Gerenciamento de pedidos API DJANGO')\nrouter = DefaultRouter()\nrouter.register(r'user', UserViewSet, basename='user')\nurlpatterns = router.urls",
+        "detail": "users.urls",
         "documentation": {}
     },
     {
