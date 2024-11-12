@@ -25,6 +25,9 @@ class User(AbstractBaseUser, PermissionsMixin):
         unique=True,
     )
     # unicidade do campo password pode ser prejudicial à saúde da api
+    # mas de qualquer forma cada senha é armazenada em banco com um hash diferente,
+    # o que garante que os hash armazenados em banco sejam unicos
+    
     # password = models.CharField(
     #     max_length=255, 
     #     unique=True

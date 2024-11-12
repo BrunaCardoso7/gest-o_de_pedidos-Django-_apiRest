@@ -1,12 +1,17 @@
 from orders.serializers import (CreateOrderSerializer, ListItemsInOrderSerializer,
     ListOrderSerializer)
-from rest_framework.permissions import IsAuthenticated
 from orders.models import Order
+from items.models import Item
+
+from rest_framework.permissions import IsAuthenticated
 from rest_framework import viewsets, status
 from rest_framework.response import Response
-from items.models import Item
-from django.core.paginator import Paginator
+
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+
 from rest_framework.pagination import PageNumberPagination
+
 class OrderViewSet(viewsets.GenericViewSet):
     permission_classes = [IsAuthenticated]
 
@@ -19,6 +24,20 @@ class OrderViewSet(viewsets.GenericViewSet):
 
     def get_queryset(self):
         return Order.objects.filter(user=self.request.user)
+
+
+    @swagger_auto_schema(
+        tags=["Gestão de Pedidos"],
+        operation_description="Cria um novo pedido para o usuário autenticado.",
+        request_body=CreateOrderSerializer,
+        responses={
+            201: openapi.Response(
+                description="Pedido criado com sucesso!",
+                schema=CreateOrderSerializer
+            ),
+            400: openapi.Response(description="Erro de validação nos dados fornecidos.")
+        }
+    )
 
     def create(self, request):
         serializer = self.get_serializer(data=request.data)
@@ -36,7 +55,16 @@ class OrderViewSet(viewsets.GenericViewSet):
 
     
 
-
+    @swagger_auto_schema(
+        tags=["Gestão de Pedidos"],
+        operation_description="Retorna uma lista paginada dos pedidos do usuário autenticado.",
+        responses={
+            200: openapi.Response(
+                description="Lista de pedidos recuperada com sucesso!",
+                schema=ListOrderSerializer(many=True)
+            )
+        }
+    )
     def list(self, request):
         queryset = Order.objects.all()
         
@@ -48,6 +76,17 @@ class OrderViewSet(viewsets.GenericViewSet):
         
         return paginator.get_paginated_response(serializer.data)
     
+    @swagger_auto_schema(
+        tags=["Gestão de Pedidos"],
+        operation_description="Recupera detalhes de um pedido específico pelo ID.",
+        responses={
+            200: openapi.Response(
+                description="Detalhes do pedido recuperados com sucesso!",
+                schema=ListItemsInOrderSerializer
+            ),
+            404: openapi.Response(description="Pedido não encontrado.")
+        }
+    )
     def retrieve(self, request, pk=None):
         try:
             order = self.get_queryset().get(pk=pk)
