@@ -432,6 +432,86 @@
         "documentation": {}
     },
     {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "swagger_auto_schema",
+        "importPath": "drf_yasg.utils",
+        "description": "drf_yasg.utils",
+        "isExtraImport": true,
+        "detail": "drf_yasg.utils",
+        "documentation": {}
+    },
+    {
+        "label": "swagger_auto_schema",
+        "importPath": "drf_yasg.utils",
+        "description": "drf_yasg.utils",
+        "isExtraImport": true,
+        "detail": "drf_yasg.utils",
+        "documentation": {}
+    },
+    {
+        "label": "swagger_auto_schema",
+        "importPath": "drf_yasg.utils",
+        "description": "drf_yasg.utils",
+        "isExtraImport": true,
+        "detail": "drf_yasg.utils",
+        "documentation": {}
+    },
+    {
+        "label": "swagger_auto_schema",
+        "importPath": "drf_yasg.utils",
+        "description": "drf_yasg.utils",
+        "isExtraImport": true,
+        "detail": "drf_yasg.utils",
+        "documentation": {}
+    },
+    {
+        "label": "openapi",
+        "importPath": "drf_yasg",
+        "description": "drf_yasg",
+        "isExtraImport": true,
+        "detail": "drf_yasg",
+        "documentation": {}
+    },
+    {
+        "label": "openapi",
+        "importPath": "drf_yasg",
+        "description": "drf_yasg",
+        "isExtraImport": true,
+        "detail": "drf_yasg",
+        "documentation": {}
+    },
+    {
+        "label": "openapi",
+        "importPath": "drf_yasg",
+        "description": "drf_yasg",
+        "isExtraImport": true,
+        "detail": "drf_yasg",
+        "documentation": {}
+    },
+    {
+        "label": "openapi",
+        "importPath": "drf_yasg",
+        "description": "drf_yasg",
+        "isExtraImport": true,
+        "detail": "drf_yasg",
+        "documentation": {}
+    },
+    {
+        "label": "openapi",
+        "importPath": "drf_yasg",
+        "description": "drf_yasg",
+        "isExtraImport": true,
+        "detail": "drf_yasg",
+        "documentation": {}
+    },
+    {
         "label": "APIView",
         "importPath": "rest_framework.views",
         "description": "rest_framework.views",
@@ -477,14 +557,6 @@
         "description": "rest_framework.permissions",
         "isExtraImport": true,
         "detail": "rest_framework.permissions",
-        "documentation": {}
-    },
-    {
-        "label": "authenticate",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -705,14 +777,6 @@
         "documentation": {}
     },
     {
-        "label": "Paginator",
-        "importPath": "django.core.paginator",
-        "description": "django.core.paginator",
-        "isExtraImport": true,
-        "detail": "django.core.paginator",
-        "documentation": {}
-    },
-    {
         "label": "PageNumberPagination",
         "importPath": "rest_framework.pagination",
         "description": "rest_framework.pagination",
@@ -783,14 +847,6 @@
         "description": "authentication.views",
         "isExtraImport": true,
         "detail": "authentication.views",
-        "documentation": {}
-    },
-    {
-        "label": "openapi",
-        "importPath": "drf_yasg",
-        "description": "drf_yasg",
-        "isExtraImport": true,
-        "detail": "drf_yasg",
         "documentation": {}
     },
     {
@@ -913,7 +969,7 @@
         "kind": 6,
         "importPath": "authentication.views",
         "description": "authentication.views",
-        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    def post(self, request):\n        username = request.data.get(\"username\")\n        password = request.data.get(\"password\")\n        # print(\"Dados recebidos da requisição:\")\n        # print(\"Username:\", username)\n        # print(\"Password:\", password)\n        user = authenticate(username=username, password=password)\n        # print(\"Resultado de authenticate:\", user)  ",
+        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    @swagger_auto_schema(\n        tags=[\"Autenticação de usuário\"],\n        operation_description=\"Autentica um usuário usando seu nome de usuário e senha\",\n        responses={\n            200: openapi.Response(\n                description=\"Usuário autenticado com sucesso!\",\n            )\n        }",
         "detail": "authentication.views",
         "documentation": {}
     },
@@ -1012,7 +1068,7 @@
         "kind": 6,
         "importPath": "items.views",
         "description": "items.views",
-        "peekOfCode": "class ItemViewSet(viewsets.GenericViewSet):\n    queryset = Item.objects.all()\n    def get_serializer_class (self):\n        if self.action == 'create': \n            return CreateItemSerializer\n        elif self.action == 'partial_update':\n            return UpdateItemSerializer\n        return ListItemsSerializer\n    permission_classes = [IsAuthenticated]\n    def create (self, request):",
+        "peekOfCode": "class ItemViewSet(viewsets.GenericViewSet):\n    queryset = Item.objects.all()\n    def get_serializer_class (self):\n        if self.action == 'create': \n            return CreateItemSerializer\n        elif self.action == 'partial_update':\n            return UpdateItemSerializer\n        return ListItemsSerializer\n    permission_classes = [IsAuthenticated]\n    @swagger_auto_schema(",
         "detail": "items.views",
         "documentation": {}
     },
@@ -1372,7 +1428,7 @@
         "kind": 6,
         "importPath": "users.models",
         "description": "users.models",
-        "peekOfCode": "class User(AbstractBaseUser, PermissionsMixin):\n    username = models.CharField(\n        max_length=255, \n        unique=True,\n    )\n    email = models.EmailField(\n        unique=True,\n    )\n    # unicidade do campo password pode ser prejudicial à saúde da api\n    # password = models.CharField(",
+        "peekOfCode": "class User(AbstractBaseUser, PermissionsMixin):\n    username = models.CharField(\n        max_length=255, \n        unique=True,\n    )\n    email = models.EmailField(\n        unique=True,\n    )\n    # unicidade do campo password pode ser prejudicial à saúde da api\n    # mas de qualquer forma cada senha é armazenada em banco com um hash diferente,",
         "detail": "users.models",
         "documentation": {}
     },
@@ -1449,3 +1505,4 @@
         "documentation": {}
     }
 ]
+
