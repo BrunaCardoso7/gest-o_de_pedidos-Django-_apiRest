@@ -24,12 +24,6 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 http://localhost/api/schema/swagger-ui/#/
 ```
 
-
-Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
-
-- **Python 3.x**: 
-- **pip**: 
-
 ## Passos para Executar o Projeto
 
 ### 1. Clonar o Repositório
