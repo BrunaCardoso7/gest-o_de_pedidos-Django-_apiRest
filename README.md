@@ -21,7 +21,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 ### Url para acesso da documentação:
 
 ```bash
-http://localhost/api/schema/swagger-ui/#/
+http://127.0.0.1:8000/api/schema/swagger-ui/#/
 ```
 
 ## Passos para Executar o Projeto
