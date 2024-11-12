@@ -7,8 +7,8 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 
-from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
+from drf_spectacular.utils import extend_schema, OpenApiResponse
+from drf_spectacular.openapi import OpenApiTypes
 
 from rest_framework.pagination import PageNumberPagination
 
@@ -26,19 +26,16 @@ class OrderViewSet(viewsets.GenericViewSet):
         return Order.objects.filter(user=self.request.user)
 
 
-    @swagger_auto_schema(
+    @extend_schema(
         tags=["Gestão de Pedidos"],
-        operation_description="Cria um novo pedido para o usuário autenticado.",
-        request_body=CreateOrderSerializer,
+        operation_id="order_create",
+        description="Criação de um novo usuário",
+        request=CreateOrderSerializer,
         responses={
-            201: openapi.Response(
-                description="Pedido criado com sucesso!",
-                schema=CreateOrderSerializer
-            ),
-            400: openapi.Response(description="Erro de validação nos dados fornecidos.")
+            201: CreateOrderSerializer,
+            400: "Dados inválidos"
         }
     )
-
     def create(self, request):
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
@@ -54,16 +51,16 @@ class OrderViewSet(viewsets.GenericViewSet):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     
-
-    @swagger_auto_schema(
+    @extend_schema(
         tags=["Gestão de Pedidos"],
-        operation_description="Retorna uma lista paginada dos pedidos do usuário autenticado.",
+        operation_id="order_listall",
+        description="Listagem de todos os pedidos do usuário",
         responses={
-            200: openapi.Response(
-                description="Lista de pedidos recuperada com sucesso!",
-                schema=ListOrderSerializer(many=True)
-            )
-        }
+            200: OpenApiResponse(
+                description="Lista de pedidos do usuário",
+                response=OpenApiTypes.OBJECT,
+            ),
+        },
     )
     def list(self, request):
         queryset = Order.objects.all()
@@ -76,15 +73,14 @@ class OrderViewSet(viewsets.GenericViewSet):
         
         return paginator.get_paginated_response(serializer.data)
     
-    @swagger_auto_schema(
+
+    @extend_schema(
         tags=["Gestão de Pedidos"],
-        operation_description="Recupera detalhes de um pedido específico pelo ID.",
+        operation_id="order_findbyone",
+        description="Listagem de detalhes do pedido",
         responses={
-            200: openapi.Response(
-                description="Detalhes do pedido recuperados com sucesso!",
-                schema=ListItemsInOrderSerializer
-            ),
-            404: openapi.Response(description="Pedido não encontrado.")
+            201: ListItemsInOrderSerializer,
+            400: "Dados inválidos"
         }
     )
     def retrieve(self, request, pk=None):

@@ -32,14 +32,6 @@
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -197,6 +189,126 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -312,126 +424,6 @@
         "documentation": {}
     },
     {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "serializers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "viewsets",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "serializers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "viewsets",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "permissions",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "serializers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "viewsets",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
         "label": "authenticate",
         "importPath": "django.contrib.auth",
         "description": "django.contrib.auth",
@@ -445,62 +437,6 @@
         "description": "drf_yasg.utils",
         "isExtraImport": true,
         "detail": "drf_yasg.utils",
-        "documentation": {}
-    },
-    {
-        "label": "swagger_auto_schema",
-        "importPath": "drf_yasg.utils",
-        "description": "drf_yasg.utils",
-        "isExtraImport": true,
-        "detail": "drf_yasg.utils",
-        "documentation": {}
-    },
-    {
-        "label": "swagger_auto_schema",
-        "importPath": "drf_yasg.utils",
-        "description": "drf_yasg.utils",
-        "isExtraImport": true,
-        "detail": "drf_yasg.utils",
-        "documentation": {}
-    },
-    {
-        "label": "swagger_auto_schema",
-        "importPath": "drf_yasg.utils",
-        "description": "drf_yasg.utils",
-        "isExtraImport": true,
-        "detail": "drf_yasg.utils",
-        "documentation": {}
-    },
-    {
-        "label": "openapi",
-        "importPath": "drf_yasg",
-        "description": "drf_yasg",
-        "isExtraImport": true,
-        "detail": "drf_yasg",
-        "documentation": {}
-    },
-    {
-        "label": "openapi",
-        "importPath": "drf_yasg",
-        "description": "drf_yasg",
-        "isExtraImport": true,
-        "detail": "drf_yasg",
-        "documentation": {}
-    },
-    {
-        "label": "openapi",
-        "importPath": "drf_yasg",
-        "description": "drf_yasg",
-        "isExtraImport": true,
-        "detail": "drf_yasg",
-        "documentation": {}
-    },
-    {
-        "label": "openapi",
-        "importPath": "drf_yasg",
-        "description": "drf_yasg",
-        "isExtraImport": true,
-        "detail": "drf_yasg",
         "documentation": {}
     },
     {
@@ -597,6 +533,54 @@
         "description": "rest_framework_simplejwt.tokens",
         "isExtraImport": true,
         "detail": "rest_framework_simplejwt.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "extend_schema",
+        "importPath": "drf_spectacular.utils",
+        "description": "drf_spectacular.utils",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.utils",
+        "documentation": {}
+    },
+    {
+        "label": "extend_schema",
+        "importPath": "drf_spectacular.utils",
+        "description": "drf_spectacular.utils",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.utils",
+        "documentation": {}
+    },
+    {
+        "label": "extend_schema",
+        "importPath": "drf_spectacular.utils",
+        "description": "drf_spectacular.utils",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.utils",
+        "documentation": {}
+    },
+    {
+        "label": "OpenApiResponse",
+        "importPath": "drf_spectacular.utils",
+        "description": "drf_spectacular.utils",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.utils",
+        "documentation": {}
+    },
+    {
+        "label": "extend_schema",
+        "importPath": "drf_spectacular.utils",
+        "description": "drf_spectacular.utils",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.utils",
+        "documentation": {}
+    },
+    {
+        "label": "SigninSerializer",
+        "importPath": "authentication.serializers",
+        "description": "authentication.serializers",
+        "isExtraImport": true,
+        "detail": "authentication.serializers",
         "documentation": {}
     },
     {
@@ -777,6 +761,14 @@
         "documentation": {}
     },
     {
+        "label": "OpenApiTypes",
+        "importPath": "drf_spectacular.openapi",
+        "description": "drf_spectacular.openapi",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.openapi",
+        "documentation": {}
+    },
+    {
         "label": "PageNumberPagination",
         "importPath": "rest_framework.pagination",
         "description": "rest_framework.pagination",
@@ -850,11 +842,27 @@
         "documentation": {}
     },
     {
-        "label": "get_schema_view",
-        "importPath": "drf_yasg.views",
-        "description": "drf_yasg.views",
+        "label": "SpectacularAPIView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
         "isExtraImport": true,
-        "detail": "drf_yasg.views",
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularSwaggerView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularRedocView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
         "documentation": {}
     },
     {
@@ -956,6 +964,15 @@
         "documentation": {}
     },
     {
+        "label": "SigninSerializer",
+        "kind": 6,
+        "importPath": "authentication.serializers",
+        "description": "authentication.serializers",
+        "peekOfCode": "class SigninSerializer(serializers.Serializer):\n    username = serializers.CharField(required=True, max_length=150)\n    password = serializers.CharField(required=True, write_only=True)",
+        "detail": "authentication.serializers",
+        "documentation": {}
+    },
+    {
         "label": "AuthenticateUserManagementTest",
         "kind": 6,
         "importPath": "authentication.tests",
@@ -969,7 +986,7 @@
         "kind": 6,
         "importPath": "authentication.views",
         "description": "authentication.views",
-        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    @swagger_auto_schema(\n        tags=[\"Autenticação de usuário\"],\n        operation_description=\"Autentica um usuário usando seu nome de usuário e senha\",\n        request_body=openapi.Schema(\n            type=openapi.TYPE_OBJECT,\n            properties={\n                'username': openapi.Schema(type=openapi.TYPE_STRING, description='Nome de usuário'),\n                'password': openapi.Schema(type=openapi.TYPE_STRING, description='Senha do usuário'),",
+        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    @extend_schema(\n        tags=[\"Autenticação de usuário\"],\n        operation_id=\"user_signin\",\n        description=\"Autentica um usuário usando seu nome de usuário e senha\",\n        request= SigninSerializer,\n        responses={\n            200: \"retorna o token de acesso e o refresh token!\",\n            401: \"usuário não autenticado\"",
         "detail": "authentication.views",
         "documentation": {}
     },
@@ -1068,7 +1085,7 @@
         "kind": 6,
         "importPath": "items.views",
         "description": "items.views",
-        "peekOfCode": "class ItemViewSet(viewsets.GenericViewSet):\n    queryset = Item.objects.all()\n    def get_serializer_class (self):\n        if self.action == 'create': \n            return CreateItemSerializer\n        elif self.action == 'partial_update':\n            return UpdateItemSerializer\n        return ListItemsSerializer\n    permission_classes = [IsAuthenticated]\n    @swagger_auto_schema(",
+        "peekOfCode": "class ItemViewSet(viewsets.GenericViewSet):\n    queryset = Item.objects.all()\n    def get_serializer_class (self):\n        if self.action == 'create': \n            return CreateItemSerializer\n        elif self.action == 'partial_update':\n            return UpdateItemSerializer\n        return ListItemsSerializer\n    permission_classes = [IsAuthenticated]\n    @extend_schema(",
         "detail": "items.views",
         "documentation": {}
     },
@@ -1185,7 +1202,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "SECRET_KEY = config(\"SECRET_KEY\")\n# SECURITY WARNING: don't run with debug turned on in production!\n# cast: transforma string de ambiente em boolean\n# default: caso configuração não seja definida ele será false\nDEBUG = config(\"DEBUG\", cast=bool, default=False)\n# cast: transforma string de ambiente em Csv para permissão de multiplos hosts\nALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    \"authentication\",",
+        "peekOfCode": "SECRET_KEY = config(\"SECRET_KEY\")\n# SECURITY WARNING: don't run with debug turned on in production!\n# cast: transforma string de ambiente em boolean\n# default: caso configuração não seja definida ele será false\nDEBUG = config(\"DEBUG\", cast=bool, default=False)\n# cast: transforma string de ambiente em Csv para permissão de multiplos hosts\nALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    'drf_spectacular',",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1194,7 +1211,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "DEBUG = config(\"DEBUG\", cast=bool, default=False)\n# cast: transforma string de ambiente em Csv para permissão de multiplos hosts\nALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"items\",\n    \"orders\",\n    \"rest_framework_swagger\",",
+        "peekOfCode": "DEBUG = config(\"DEBUG\", cast=bool, default=False)\n# cast: transforma string de ambiente em Csv para permissão de multiplos hosts\nALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    'drf_spectacular',\n    \"authentication\",\n    \"users\",\n    \"items\",\n    \"orders\",",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1203,7 +1220,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "ALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"items\",\n    \"orders\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",",
+        "peekOfCode": "ALLOWED_HOSTS = config(\"ALLOWED_HOSTS\", cast=Csv())\n# Application definition\nINSTALLED_APPS = [\n    'drf_spectacular',\n    \"authentication\",\n    \"users\",\n    \"items\",\n    \"orders\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1212,7 +1229,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    \"authentication\",\n    \"users\",\n    \"items\",\n    \"orders\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",",
+        "peekOfCode": "INSTALLED_APPS = [\n    'drf_spectacular',\n    \"authentication\",\n    \"users\",\n    \"items\",\n    \"orders\",\n    \"rest_framework_swagger\",\n    \"rest_framework_simplejwt\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1284,7 +1301,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "TIME_ZONE = \"America/Sao_Paulo\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nREST_FRAMEWORK = {",
+        "peekOfCode": "TIME_ZONE = \"America/Sao_Paulo\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nSPECTACULAR_SETTINGS = {",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1293,7 +1310,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Gerenciamento de Pedidos API',",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1302,7 +1319,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework_simplejwt.authentication.JWTAuthentication',",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Gerenciamento de Pedidos API',\n    'DESCRIPTION': 'Documentação completa de todas as rotas da API de gerenciamento de pedidos',",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1311,7 +1328,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "STATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ],\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.IsAuthenticated',",
+        "peekOfCode": "STATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Gerenciamento de Pedidos API',\n    'DESCRIPTION': 'Documentação completa de todas as rotas da API de gerenciamento de pedidos',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n    'SWAGGER_UI_SETTINGS': {",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1320,7 +1337,16 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ],\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.IsAuthenticated',\n    ],\n}\nSIMPLE_JWT = {",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Gerenciamento de Pedidos API',\n    'DESCRIPTION': 'Documentação completa de todas as rotas da API de gerenciamento de pedidos',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n    'SWAGGER_UI_SETTINGS': {\n        'deepLinking': True,\n    },\n    'COMPONENT_SPLIT_REQUEST': True,",
+        "detail": "setup.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SPECTACULAR_SETTINGS",
+        "kind": 5,
+        "importPath": "setup.settings",
+        "description": "setup.settings",
+        "peekOfCode": "SPECTACULAR_SETTINGS = {\n    'TITLE': 'Gerenciamento de Pedidos API',\n    'DESCRIPTION': 'Documentação completa de todas as rotas da API de gerenciamento de pedidos',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n    'SWAGGER_UI_SETTINGS': {\n        'deepLinking': True,\n    },\n    'COMPONENT_SPLIT_REQUEST': True,\n    'SECURITY': [",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1329,7 +1355,7 @@
         "kind": 5,
         "importPath": "setup.settings",
         "description": "setup.settings",
-        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': [\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ],\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.IsAuthenticated',\n    ],\n}\nSIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),  ",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),  \n    'REFRESH_TOKEN_LIFETIME': timedelta(hours=3)\n}",
         "detail": "setup.settings",
         "documentation": {}
     },
@@ -1352,20 +1378,11 @@
         "documentation": {}
     },
     {
-        "label": "schema_view",
-        "kind": 5,
-        "importPath": "setup.urls",
-        "description": "setup.urls",
-        "peekOfCode": "schema_view = get_schema_view(\n   openapi.Info(\n      title=\"Gerenciamento de Pedidos API\",\n      default_version='v1',\n      description=\"Documentação completa de todas as rotas da api de gerenciamento de pedidos\",\n      terms_of_service=\"https://www.google.com/policies/terms/\",\n      contact=openapi.Contact(email=\"brunafernandes@gmail.com\"),\n      license=openapi.License(name=\"Licença MIT\"),\n   ),\n   public=True,",
-        "detail": "setup.urls",
-        "documentation": {}
-    },
-    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "setup.urls",
         "description": "setup.urls",
-        "peekOfCode": "urlpatterns = [\n   path(\"admin/\", admin.site.urls),\n   path(\"signin/\", SigninTokenObtainPairView.as_view(), name='signin'),\n   path(\"api/v1/\", include('users.urls')), \n   path(\"api/v1/\", include('items.urls')), \n   path(\"api/v1/\", include('orders.urls')), \n   path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-docs'),\n]",
+        "peekOfCode": "urlpatterns = [\n   path(\"signin/\", SigninTokenObtainPairView.as_view(), name='signin'),\n   path(\"api/v1/\", include('users.urls')), \n   path(\"api/v1/\", include('items.urls')), \n   path(\"api/v1/\", include('orders.urls')), \n   # Documentação da API\n   path('api/schema/', SpectacularAPIView.as_view(), name='schema'),\n   path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),\n   path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),\n]",
         "detail": "setup.urls",
         "documentation": {}
     },

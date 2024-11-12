@@ -1,29 +1,15 @@
-from django.contrib import admin
-from django.urls import path, include
 from authentication.views import SigninTokenObtainPairView
-from drf_yasg import openapi
-from drf_yasg.views import get_schema_view
-from rest_framework import permissions
-
-# Configuração do Swagger
-schema_view = get_schema_view(
-   openapi.Info(
-      title="Gerenciamento de Pedidos API",
-      default_version='v1',
-      description="Documentação completa de todas as rotas da api de gerenciamento de pedidos",
-      terms_of_service="https://www.google.com/policies/terms/",
-      contact=openapi.Contact(email="brunafernandes@gmail.com"),
-      license=openapi.License(name="Licença MIT"),
-   ),
-   public=True,
-   permission_classes=(permissions.AllowAny,),
-)
+from django.urls import path, include
+from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 
 urlpatterns = [
-   path("admin/", admin.site.urls),
    path("signin/", SigninTokenObtainPairView.as_view(), name='signin'),
    path("api/v1/", include('users.urls')), 
    path("api/v1/", include('items.urls')), 
    path("api/v1/", include('orders.urls')), 
-   path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-docs'),
+
+   # Documentação da API
+   path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+   path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+   path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
 ]

@@ -1,8 +1,7 @@
 from users.models import User
 from users.serializers import CreateUserSerializer, ListUserSerializer, UpdateUserSerializer
 
-from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
+from drf_spectacular.utils import extend_schema
 
 
 from rest_framework import viewsets, status
@@ -24,18 +23,14 @@ class UserViewSet(viewsets.GenericViewSet):
             return [AllowAny()]
         return [IsAuthenticated()]
 
-    @swagger_auto_schema(
+    @extend_schema(
         tags=["Gerenciamento de usuários"],
-        operation_description="Criação de um novo usuário",
-        request_body=CreateUserSerializer,
+        operation_id="user_create",
+        description="Criação de um novo usuário",
+        request=CreateUserSerializer,
         responses={
-            201: openapi.Response(
-                description="Registrado com sucesso!",
-                schema=CreateUserSerializer
-            ),
-            400: openapi.Response(
-                description="Dados inválidos"
-            )
+            201: CreateUserSerializer,
+            400: "Dados inválidos"
         }
     )
     def create(self, request):  
@@ -45,18 +40,14 @@ class UserViewSet(viewsets.GenericViewSet):
         
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     
-    @swagger_auto_schema(
+    @extend_schema(
         tags=["Gerenciamento de usuários"],
-        operation_description="Atualização do perfil do usuário",
-        request_body=UpdateUserSerializer,
+        operation_id="user_update",
+        description="Atualização de um novo usuário",
+        request=UpdateUserSerializer,
         responses={
-            206: openapi.Response(
-                description="Atualizado com sucesso!",
-                schema=UpdateUserSerializer
-            ),
-            404: openapi.Response(
-                description="Usuário não encontrado!"
-            )
+            206: UpdateUserSerializer,
+            400: "Dados inválidos"
         }
     )
     def partial_update (self, request, **kwargs):
@@ -68,18 +59,14 @@ class UserViewSet(viewsets.GenericViewSet):
         serializer.save()
 
         return Response(serializer.data, status=status.HTTP_206_PARTIAL_CONTENT)
-    
-    @swagger_auto_schema(
-        tags=["Gerenciamento de usuários"],  
-        operation_description="Detalhes do perfil do usuário",
+
+    @extend_schema(
+        tags=["Gerenciamento de usuários"],
+        operation_id="user_listbyone",
+        description="Atualização de um novo usuário",
         responses={
-            200: openapi.Response(
-                description="Detalhes de usuários com sucesso!",
-                schema=ListUserSerializer
-            ),
-            404: openapi.Response(
-                description="Usuário não encontrado!"
-            )
+            200: ListUserSerializer,
+            404: "Usuário não foi encontrado!"
         }
     )
     def retrieve (self, request, **kwargs):

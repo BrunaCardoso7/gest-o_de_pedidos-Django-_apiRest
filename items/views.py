@@ -1,8 +1,7 @@
 from items.serializers import CreateItemSerializer, ListItemsSerializer, UpdateItemSerializer
 from .models import Item
 
-from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
+from drf_spectacular.utils import extend_schema
 
 from rest_framework import viewsets, status
 from rest_framework.permissions import IsAuthenticated
@@ -20,18 +19,14 @@ class ItemViewSet(viewsets.GenericViewSet):
     
     permission_classes = [IsAuthenticated]
     
-    @swagger_auto_schema(
-        tags=["Gerenciamento de itens"],  
-        operation_description="Cria um novo item com nome e preço",
-        request_body=CreateItemSerializer,
+    @extend_schema(
+        tags=["Gerenciamento de itens"],
+        operation_id="item_create",
+        description="Atualização de um novo item",
+        request=CreateItemSerializer,
         responses={
-            201: openapi.Response(
-                description="Item registrado com sucesso!",
-                schema=CreateItemSerializer
-            ),
-            400: openapi.Response(
-                description="Dados inválidos"
-            )
+            201: CreateItemSerializer,
+            400: "Dados inválidos"
         }
     )
     def create (self, request):
@@ -42,18 +37,14 @@ class ItemViewSet(viewsets.GenericViewSet):
         
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     
-    @swagger_auto_schema(
+    @extend_schema(
         tags=["Gerenciamento de itens"],
-        operation_description="Atualiza o nome e o preço de um item",
-        request_body=UpdateItemSerializer,
+        operation_id="item_update",
+        description="Atualização de um item",
+        request=UpdateItemSerializer,
         responses={
-            206: openapi.Response(
-                description="Atualizado com sucesso!",
-                schema=UpdateItemSerializer
-            ),
-            404: openapi.Response(
-                description="Item não encontrado!"
-            )
+            206: UpdateItemSerializer,
+            400: "Dados inválidos"
         }
     )
     def partial_update (self, request, **kwargs):
@@ -66,16 +57,13 @@ class ItemViewSet(viewsets.GenericViewSet):
         
         return Response(serializer.data, status=status.HTTP_206_PARTIAL_CONTENT)
 
-    @swagger_auto_schema(
+    @extend_schema(
         tags=["Gerenciamento de itens"],
-        operation_description="Exclue um item",
+        operation_id="item_delete",
+        description="Remoção de um item",
         responses={
-            204: openapi.Response(
-                description="Deletado com sucesso!",
-            ),
-            404: openapi.Response(
-                description="Item não encontrado!"
-            )
+            204: "item removido com sucesso",
+            400: "Dados inválidos"
         }
     )
     def destroy (self, request, **kwargs):
@@ -85,16 +73,14 @@ class ItemViewSet(viewsets.GenericViewSet):
         
         return Response("Item removido!",status=status.HTTP_204_NO_CONTENT) 
     
-    @swagger_auto_schema(
+    @extend_schema(
         tags=["Gerenciamento de itens"],
-        operation_description="Recupera uma lista de todos os itens.",
+        operation_id="item_listall",
+        description="lista todos os item registrados",
         responses={
-            200: openapi.Response(
-                description="Listagem dos items registrados com sucesso!",
-                schema=ListItemsSerializer 
-            )
+            200: ListItemsSerializer,
         }
-    )   
+    )
     def list (self, request):
         items = self.get_queryset()
         
