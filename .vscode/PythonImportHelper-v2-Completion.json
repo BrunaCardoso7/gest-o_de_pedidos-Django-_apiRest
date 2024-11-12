@@ -969,7 +969,7 @@
         "kind": 6,
         "importPath": "authentication.views",
         "description": "authentication.views",
-        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    @swagger_auto_schema(\n        tags=[\"Autenticação de usuário\"],\n        operation_description=\"Autentica um usuário usando seu nome de usuário e senha\",\n        responses={\n            200: openapi.Response(\n                description=\"Usuário autenticado com sucesso!\",\n            )\n        }",
+        "peekOfCode": "class SigninTokenObtainPairView(APIView):\n    permission_classes = [AllowAny]\n    @swagger_auto_schema(\n        tags=[\"Autenticação de usuário\"],\n        operation_description=\"Autentica um usuário usando seu nome de usuário e senha\",\n        request_body=openapi.Schema(\n            type=openapi.TYPE_OBJECT,\n            properties={\n                'username': openapi.Schema(type=openapi.TYPE_STRING, description='Nome de usuário'),\n                'password': openapi.Schema(type=openapi.TYPE_STRING, description='Senha do usuário'),",
         "detail": "authentication.views",
         "documentation": {}
     },
@@ -1505,4 +1505,3 @@
         "documentation": {}
     }
 ]
-

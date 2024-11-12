@@ -16,9 +16,31 @@ class SigninTokenObtainPairView(APIView):
     @swagger_auto_schema(
         tags=["Autenticação de usuário"],
         operation_description="Autentica um usuário usando seu nome de usuário e senha",
+        request_body=openapi.Schema(
+            type=openapi.TYPE_OBJECT,
+            properties={
+                'username': openapi.Schema(type=openapi.TYPE_STRING, description='Nome de usuário'),
+                'password': openapi.Schema(type=openapi.TYPE_STRING, description='Senha do usuário'),
+            },
+        ),
         responses={
             200: openapi.Response(
                 description="Usuário autenticado com sucesso!",
+                schema=openapi.Schema(
+                    type=openapi.TYPE_OBJECT,
+                    properties={
+                        'tokens': openapi.Schema(
+                            type=openapi.TYPE_OBJECT,
+                            properties={
+                                'refresh': openapi.Schema(type=openapi.TYPE_STRING),
+                                'access': openapi.Schema(type=openapi.TYPE_STRING),
+                            },
+                        )
+                    }
+                ),
+            ),
+            401: openapi.Response(
+                description="Usuário ou senha estão incorretos!"
             )
         }
     )   
